@@ -64,8 +64,7 @@
             "Osteoarthritis QI note",
             "Leprosy note",
             "Kalazar note",
-            "Animal bite note",
-            "Vaccine note"
+            "Animal bite note"
         ],
         "male": [],
         "female": [
@@ -93,7 +92,8 @@
             "CBIMNCI (2 to 59 months child)",
             "Nutrition",
             "MAM-SAM Counseling Note",
-            "IMAM note"
+            "IMAM note",
+            "Vaccine note"
         ]
     }
 
