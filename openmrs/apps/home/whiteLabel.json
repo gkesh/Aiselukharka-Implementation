@@ -1,0 +1,32 @@
+{
+  "homePage": {
+    "header_text": "Welcome to Digital Health Intiative of Aiselukharka",
+    "logo": "/bahmni/images/nepalEHRLogoFull.png",
+    "title_text": " "
+  },
+  "loginPage": {
+    "logos": [
+      "/bahmni/images/ict4d.png",
+      "/bahmni/images/sunyaek.svg"
+    ],
+    "background": "/bahmni/images/bg-login.png",
+    "showHeaderText": true,
+    "showTitleText": false,
+    "collaborators": "A Joint Initiative by Sunyaek and ICT4D"
+  },
+  "modules": {
+    "links": {
+      "bahmni": "/bahmni/home",
+      "elis": "/openelis",
+      "erp": "http://103.90.86.212:8069"
+    },
+    "hidden": {
+      "bahmni": false,
+      "elis": true,
+      "erp": true
+    }
+  },
+  "helpLink": {
+    "url": "https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home"
+  }
+}
