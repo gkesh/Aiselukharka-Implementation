@@ -1,43 +1,62 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/css/print.css"/>
 <div>
-    <style>
-    </style>
     <div class="row fontForSticker">
-        <div class="left">
-
-            <div class="row">
-                <span><b>{{patient.primaryIdentifier.identifier}}</b></span>
-            </div>
-
-            <div class="row">
-                <span>{{patient.fullNameLocal()}}</span>
-            </div>
-
-            <div ng-switch on="patient.gender" class="row">
-                <span>
-                    ({{patient.age.years}},
-                </span>
-                <span ng-switch-when="M">
-                    Male)
-                </span>
-                <span ng-switch-when="F">
-                    Female)
-                </span>
-            </div>
-
-            <div class="row">
-                <span>{{patient.registrationDate | date:'dd/MM/yyyy hh:mm:ss a'}}</span>
-            </div>
-
-            <div class="row">
-                <span>{{patient.address.cityVillage}}</span>
-                <span>{{patient.address.address1}}</span>
-                <span>{{patient.address.countyDistrict}}</span>
-            </div>
-
-            <div class="row dept">
-                <span>{{obs['Department Sent To'][0].value}}</span>
-            </div>
-        </div>
+        <table class="table borderless">
+            <tr>
+                <td>Patient ID</td>
+                <td>:</td>
+                <td>{{patient.primaryIdentifier.identifier}}</td>
+            </tr>
+            <tr>
+                <td>Date/Time</td>
+                <td>:</td>
+                <td>{{patient.registrationDate | date:'dd/MM/yyyy hh:mm:ss a'}}</td>
+            </tr>
+            <tr>
+                <td>Patient</td>
+                <td>:</td>
+                <td ng-switch on="patient.gender" class="row">
+                    {{patient.fullNameLocal()}},
+                    <span>
+                        {{patient.age.years}} Y,
+                    </span>
+                    <span ng-switch-when="M">
+                        Male
+                    </span>
+                    <span ng-switch-when="F">
+                        Female
+                    </span>
+                </td>
+            </tr>
+            <tr ng-if="patient['Contact Number']">
+                <td>Mobile No.</td>
+                <td>:</td>
+                <td>{{patient["Contact Number"]}}</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td>
+                    <span>{{patient.address.cityVillage}}</span> -
+                    <span>{{patient.address.address1}}</span>,
+                    <span>{{patient.address.countyDistrict}}</span>
+                </td>
+            </tr>
+            <tr ng-if="type">
+                <td>Department</td>
+                <td>:</td>
+                <td>{{type}}</td>
+            </tr>
+            <tr ng-if="charge && type">
+                <td>Payment</td>
+                <td>:</td>
+                <td>Rs. {{charge}}</td>
+            </tr>
+            <tr ng-if="user">
+                <td>User</td>
+                <td>:</td>
+                <td>{{user}}</td>
+            </tr>
+        </table>
     </div>
 </div>

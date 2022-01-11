@@ -25,15 +25,6 @@
     ],
     "config": {
 		 "patientInformation": {
-               
-		"insurance":{
-			"title":"Insurance Information",
-			"attributes":[
-				"NHIS Member",
-				"NHIS Number",
-				"NHIS Primary Contact Point"
-			]
-		},
                 "hidden": {
                     "attributes": [
                         "primaryContact"
@@ -53,7 +44,11 @@
         "printOptions": [{
             "label": "Print Label",
             "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
-            "shortcutKey": "r"
+            "shortcutKey": "r",
+            "prices": {
+                "ER": 50,
+                "OPD": 20
+            }
         }],
         "showMiddleName": true,
         "showLastName": true,
@@ -62,7 +57,7 @@
         "conceptSetUI": {
             "Department Sent To": {
                 "required": false,
-                "dropdown": true
+                "dropdown": false
             },
             "Hospitals, Referred by, Data": {
                 "autocomplete": true,
