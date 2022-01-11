@@ -5,16 +5,17 @@
             "Burn note",
             "Death note",
             "Dental note",
-            "DR TB intake note", 
+            "DR TB intake note",
+            "DR TB follow up (DRTB FU) note",
             "ER General Notes",
-            "HIV Testing and Counseling (HTC)",
-            "HIV Treatment and Care Intake Template",
+            "HIV Testing and counseling(HTC) note",
+            "HIV Treatment and care(HIVTC) intake template",
             "HIV Treatment and Care Progress Template",
-            "HTN-Hypertension Counseling",
             "Hypertension, Progress",
             "Kalaazar, Template",
             "Leprosy, Template",
             "Malaria",
+            "USG Notes",
             "Mental Health Screener",
             "Operative Notes",
             "Opioid Substitution Therapy Intake Template",
@@ -40,11 +41,12 @@
             "USG Notes",
             "Zoonotic Disease",
 	        "Family Planning Template",
-            "Family Planning and Reproductive Health Template",
+            "Family planning and reproductive health(FRH) note",
             "Osteoarthritis QI note",
             "Leprosy note",
             "Kalazar note",
-            "Animal bite note"
+            "Animal bite note",
+            "Vaccine note"
         ],
         "male": [],
         "female": [
@@ -70,10 +72,9 @@
         ],
         "preschooler": [
             "CBIMNCI (2 to 59 months child)",
-            "Nutrition",
+            "Nutrition note",
             "MAM-SAM Counseling Note",
-            "IMAM note",
-            "Vaccine note"
+            "IMAM note"
         ]
     }
 
