@@ -19,27 +19,6 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-  "adt": {
-    "id": "bahmni.adt",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_INPATIENT_KEY",
-    "url": "../adt/",
-    "icon": "icon-bahmni-inpatient",
-    "order": 3,
-    "requiredPrivilege": "app:adt"
-  },
-  "bahmniIpd": {
-    "id": "bahmni.ipd",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_BED_MANAGEMENT_KEY",
-    "label": "InPatient",
-    "url": "../bedmanagement/#/home",
-    "icon": "fa-bed",
-    "order": 7,
-    "requiredPrivilege": "app:adt"
-  },
   "orders": {
     "id": "bahmni.orders",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -70,16 +49,6 @@
     "order": 6,
     "requiredPrivilege": "app:reports"
   },
-  "bahmniBilling": {
-    "id": "bahmni.billing",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_PRESCRIPTION_KEY",
-    "url": "../clinical/",
-    "icon": "fa-flask",
-    "order": 7,
-    "requiredPrivilege": "app:pharmacy"
-  },
   "admin": {
     "id": "bahmni.admin",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -90,16 +59,6 @@
     "order": 8,
     "requiredPrivilege": "app:admin"
   },
-  "radiologyDocumentUpload": {
-    "id": "bahmni.radiology.document.upload",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY",
-    "url": "../document-upload/?encounterType=RADIOLOGY&topLevelConcept=Radiology",
-    "icon": "icon-bahmni-radiology",
-    "order": 9,
-    "requiredPrivilege": "app:radiology-upload"
-  },
   "patientDocumentUpload": {
     "id": "bahmni.patient.document.upload",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -109,17 +68,7 @@
     "icon": "icon-bahmni-documents",
     "order": 10,
     "requiredPrivilege": "app:patient-documents"
-  },  
-  "bahmniOT": {
-    "id": "bahmni.ot",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "Operation Theatre",
-    "url": "../ot/",
-    "icon": "fa-hospital-o",
-    "order": 9,
-    "requiredPrivilege": "app:ot"
-  }, 
+  },
   "implementerInterface": {
     "id": "bahmni.implementer.interface",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -139,16 +88,6 @@
     "icon": "fa fa-terminal",
     "order": 13,
     "requiredPrivilege": "app:admin"
-  },
-  "appointmentScheduling": {
-    "id": "bahmni.appointment.scheduling",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
-    "url": "../appointments",
-    "icon": "fa fa-calendar",
-    "order": 14,
-    "requiredPrivilege": "app:appointments"
   },
   "possibleDhis2Integration": {
     "id": "possible.dhis2Integration",
@@ -179,16 +118,5 @@
     "target": "_blank",
     "icon": "fa-bug",
     "order": 17
-  },
-  "possibleInsuranceIntegration": {
-    "id": "possible.insuranceIntegration",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-	"translationKey": "Insurance",
-    "url": "/insurance-integration/add-info",
-    "icon": "fa-book",
-    "order": 18,
-    "requiredPrivilege": "app:reports"
   }
-
 }
