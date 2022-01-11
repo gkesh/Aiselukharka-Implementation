@@ -46,7 +46,7 @@
             "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
             "shortcutKey": "r",
             "prices": {
-                "ER": 50,
+                "Emergency": 50,
                 "OPD": 20
             }
         }],
